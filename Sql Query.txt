@@ -1,0 +1,22 @@
+Using Microsft Sql Server:-
+
+1)Creating Database:
+Create Database company;
+
+2)Using Database:
+Use Company; 
+
+3)Creating Table:
+CREATE TABLE Companies (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    companyName NVARCHAR(255),
+    industry NVARCHAR(255),
+    primaryContact NVARCHAR(255),
+    addressLine1 NVARCHAR(255),
+    addressLine2 NVARCHAR(255) NULL,
+    addressState NVARCHAR(255),
+    addressCity NVARCHAR(255),
+    addressCountry NVARCHAR(255),
+    annualRevenue DECIMAL(18,2),
+    dateAdded DATETIME
+);
